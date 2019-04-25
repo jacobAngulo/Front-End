@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, NavLink } from "react-router-dom";
 import "./App.css";
+import axios from "axios";
 
 import Journal from "./components/Journal/Journal";
 import Login from "./components/Login/Login";
@@ -27,6 +28,7 @@ function Home() {
   return (
     <div className="homeScreen">
       <h2>Home screen</h2>
+      {/* {axios.get("")} */}
       <NavLink to="/login">Login</NavLink>
       <br />
       <NavLink to="/register">Register</NavLink>
